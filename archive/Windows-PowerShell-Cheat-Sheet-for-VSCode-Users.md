@@ -39,14 +39,14 @@ mkdir components, pages, layouts
 
 # Quick Reference
 
-| Action | PowerShell Command / Alias | Example |
-|---|---|---|
-| Create folders | `mkdir` | `mkdir src/components, src/pages` |
-| Create files | `ni` | `ni App.jsx, index.css` |
-| Delete files | `rm` | `rm App.jsx` |
-| Delete folders | `rm -Recurse` | `rm -Recurse src` |
-| Move files | `mv` | `mv App.jsx src/` |
-| Move + rename | `mv` | `mv script.js src/app.js` |
+| Action         | PowerShell Command / Alias | Example                           |
+| -------------- | -------------------------- | --------------------------------- |
+| Create folders | `mkdir`                    | `mkdir src/components, src/pages` |
+| Create files   | `ni`                       | `ni App.jsx, index.css`           |
+| Delete files   | `rm`                       | `rm App.jsx`                      |
+| Delete folders | `rm -Recurse`              | `rm -Recurse src`                 |
+| Move files     | `mv`                       | `mv App.jsx src/`                 |
+| Move + rename  | `mv`                       | `mv script.js src/app.js`         |
 
 > **💡 PowerShell is case-insensitive.** Commands such as `mkdir`, `MKDIR`, `Mkdir`, and `mKdIr` are treated the same. However, consistent lowercase syntax is recommended for readability.
 
@@ -702,13 +702,13 @@ src/
 
 If you're following a tutorial written for Linux or macOS, watch out for syntax differences.
 
-| Task | Bash Example | PowerShell Example |
-|---|---|---|
+| Task                 | Bash Example        | PowerShell Example          |
+| -------------------- | ------------------- | --------------------------- |
 | Multiple directories | `mkdir src/{a,b,c}` | `mkdir src/a, src/b, src/c` |
-| Multiple files | `touch a.js b.js` | `ni a.js, b.js` |
-| Delete folder | `rm -rf folder` | `rm -Recurse folder` |
-| Move file | `mv a.js src/` | `mv a.js src/` |
-| Move up | `mv a.js ..` | `mv a.js ..` |
+| Multiple files       | `touch a.js b.js`   | `ni a.js, b.js`             |
+| Delete folder        | `rm -rf folder`     | `rm -Recurse folder`        |
+| Move file            | `mv a.js src/`      | `mv a.js src/`              |
+| Move up              | `mv a.js ..`        | `mv a.js ..`                |
 
 Some commands look identical because PowerShell provides aliases with familiar names. **Do not assume that Bash syntax works everywhere just because the command name looks the same.**
 
